@@ -18,14 +18,21 @@ Software developer turned cloud security engineer, based in Nairobi 🇰🇪. I 
 - **Detect & respond** — cloud logging, log analysis, and incident response (my blue-team foundation)
 - **Attack to validate** — web & API pentesting to prove the hardening holds against real attack paths
 
-## 🛠️ Projects
-| Focus | Repo |
-|-------|------|
-| Secure AWS architecture & least-privilege IAM (Terraform) | [Secure AWS Landing Zone](#) |
-| IaC security scanning + automated remediation | [IaC Security Pipeline](#) |
-| Cloud logging, detection & incident response | [Detection Lab](#) |
-| Security automation & SOAR (playbooks, case management) | [SOC Automation Lab](#) |
-| Web & API penetration testing | [Pentest Writeups](#) |
+## 🛠️ Projects & Writeups
+| Project | What it covers |
+|---------|----------------|
+| ☁️ [**flaws.cloud — AWS Misconfiguration Walkthrough (Levels 1–6)**](assets/flaws-cloud-walkthrough.pdf) | Exploited public S3 buckets, global `AuthenticatedUsers` ACLs, AWS keys in Git history, an unencrypted public EBS snapshot, IMDSv1 metadata SSRF, and read-only IAM enumeration → Lambda invocation — each finding paired with the AWS control that closes it |
+| ⚔️ [**Reconnaissance & Subdomain Enumeration**](assets/recon-subdomain-enumeration.pdf) | Passive + active subdomain discovery (Subfinder, Dnsenum), deduplicated with Anew, liveness-checked with httpx, and WAF-fingerprinted with wafw00f — scripted end to end, narrowing dozens of hosts down to the live, in-scope attack surface |
+| ⚔️ [**Wireless Network Auditing & Pentesting**](assets/wireless-network-pentest.pdf) | Full WiFi attack chain in a virtualized 802.11 lab — monitor mode, rogue AP, deauth flood, WPA/TKIP handshake capture, and an aircrack-ng dictionary attack with rockyou |
+| ⚔️ [**Windows Exploitation — Metasploit + ngrok**](assets/windows-exploitation-metasploit.pdf) | Exposed a Metasploit listener through an ngrok TCP tunnel, delivered a `reverse_http` Meterpreter payload to a Windows 10 VM, landed a live session, and ran post-exploitation enumeration — isolated lab only |
+| 🎯 [**Financial-Sector Threat Model & Adversary Analysis**](assets/threat-model-financial-sector.pdf) | Direct & indirect targeting factors, supply-chain pivot paths, ranked adversary classes, and capability / timeframe assessment for a Kenyan asset-management firm |
+| 🧱 [**Student Records — PHP + MySQL CRUD App**](assets/student-records-crud.pdf) | Full create / read / update / delete over MySQL using PHP PDO with prepared statements, results rendered in a Bootstrap table |
+
+<!-- Add these as you build them:
+| IaC Security Pipeline — Terraform scanning + auto-remediation | [repo](#) |
+| Detection Lab — cloud logging, detection & incident response | [repo](#) |
+| SOC Automation Lab — SOAR playbooks & case management | [repo](#) |
+-->
 
 ## 🧰 Tools
 
